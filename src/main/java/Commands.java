@@ -189,7 +189,7 @@ public class Commands extends ListenerAdapter implements Searcher {
         String trama = "";
         pelicula = Frase(args);
         EmbedBuilder embed = new EmbedBuilder();
-        Conectador conector = new Conectador("http://www.omdbapi.com/?t=" + pelicula + "&apikey=9695e938");
+        Conectador conector = new Conectador("http://www.omdbapi.com/?t=" + pelicula + "APIKEY");
         try {
             String line = conector.Conectar();
             JSONParser parser = new JSONParser();
